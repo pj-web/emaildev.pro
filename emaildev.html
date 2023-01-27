@@ -15,16 +15,28 @@
 
         :root { color-scheme: light dark; supported-color-schemes: light dark; } 
 
+        /* [data-ogsc] h1.hero {
+            color: #000000 !important;
+            } */
+        
+        [data-ogsc] .darkmode {
+            background-color: #1f212d !important;
+        }
+
+
         @media (prefers-color-scheme: dark ) {
             .hero {
                 color: #000000 !important;
             }
+            .darkmode {
+                background-color: #000000 !important;
+            }
         }
     </style> 
     </head>
-        <body style="background-color:#a5a5a5; font-family: 'Roboto', sans-serif;">
+        <body class="darkmode" style="background-color:#a5a5a5; font-family: 'Roboto', sans-serif; background-color: #ffffff;">
         <div> 
-            <table width="600" align="center" style="Margin:0 auto; background-color: #ffffff;" cellspacing="0" cellpadding="0" role="presentation">
+            <table width="600" align="center" style="Margin:0 auto;" cellspacing="0" cellpadding="0" role="presentation">
                 <tr>
                     <td style="padding: 0 40px;">
                         <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
@@ -43,8 +55,8 @@
                         <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
                                 <td style="padding: 0 40px; text-align: center;">
-                                    <h1 class="hero" style="Margin: 0; mso-ascii-font-family: Arial, Helvetica, sans-serif; padding-bottom: 20px; font-weight: 900; font-size: 54px; line-height: 48px;">Email developer course</h1>
-                                    <p class="hero" style="Margin: 0; font-weight: 700; font-size: 22px; line-height: 26px;">You will learn to create high quality bulletproof HTML templates that look great on all devices</p>
+                                    <h1 class="hero" style="Margin: 0; mso-ascii-font-family: Arial, Helvetica, sans-serif; padding-bottom: 20px; font-weight: 900; font-size: 54px; line-height: 48px; color: #000000;">Email developer course</h1>
+                                    <p class="hero" style="Margin: 0; font-weight: 700; font-size: 22px; line-height: 26px; color: #000000;">You will learn to create high quality bulletproof HTML templates that look great on all devices</p>
                                 </td>
                             </tr>
                         </table>
