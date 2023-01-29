@@ -11,26 +11,40 @@
     <style type=”text/css”> 
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
+        u+.darkmode .gmail-blend-difference-blk {
         
+        mix-blend-mode: darken;
+        }
 
-        :root { color-scheme: light dark; supported-color-schemes: light dark; } 
+        /* u+.darkmode .gmail-blend-exclusion-blk {
+        background-color: #000000;
+        mix-blend-mode: screen;
+    }
 
-        /* [data-ogsc] h1.hero {
+        u+.darkmode .gmail-blend-difference-blk {
+        background-color: #000000;
+        mix-blend-mode: difference;
+        color: #ffffff;
+    } */
+    
+
+        /* [data-ogsc] .hero {
             color: #000000 !important;
             } */
         
-        [data-ogsc] .darkmode {
+        /* [data-ogsc] .darkmode {
             background-color: #1f212d !important;
-        }
+        } */
 
 
         @media (prefers-color-scheme: dark ) {
             .hero {
                 color: #000000 !important;
             }
-            .darkmode {
+            /* .darkmode {
                 background-color: #000000 !important;
-            }
+            } */
+          
         }
     </style> 
     </head>
@@ -54,9 +68,15 @@
                     <td style="background-image: url('https://i.ibb.co/3Ncqbjx/hero-bg.jpg'); height: 290px;">
                         <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
-                                <td style="padding: 0 40px; text-align: center;">
-                                    <h1 class="hero" style="Margin: 0; mso-ascii-font-family: Arial, Helvetica, sans-serif; padding-bottom: 20px; font-weight: 900; font-size: 54px; line-height: 48px; color: #000000;">Email developer course</h1>
-                                    <p class="hero" style="Margin: 0; font-weight: 700; font-size: 22px; line-height: 26px; color: #000000;">You will learn to create high quality bulletproof HTML templates that look great on all devices</p>
+                                <td class="hero-section" style="padding: 0 40px; text-align: center;">
+                                    <h1 class="hero" style="Margin: 0; mso-ascii-font-family: Arial, Helvetica, sans-serif; padding-bottom: 20px; font-weight: 900; font-size: 54px; line-height: 52px;">
+                                        <span class="gmail-blend-exclusion-blk"><span class="gmail-blend-difference-blk"> Email developer course</span></span>
+                                       
+                                        </h1>
+                                    <p class="hero" style="Margin: 0; font-weight: 700; font-size: 22px; line-height: 22px;">
+                                        <span class="gmail-blend-exclusion-blk"><span class="gmail-blend-difference-blk">You will learn to create high quality bulletproof HTML templates that look great on all devices</span></span>
+                                        
+                                    </p>
                                 </td>
                             </tr>
                         </table>
@@ -68,7 +88,9 @@
                             <tr>
                                 <td style="padding: 0 0 40px;">
                                     <h2 style="Margin: 0; padding: 0 0 16px; text-align: center; font-weight: 700; font-size: 36px; line-height: 42px;">What are HTML templates?</h2>
-                                    <p style="Margin: 0; font-weight: 400; font-size: 20px; line-height: 23px;">There are two main types of email you can send and receive: plain text emails (any email that contains just plain text with no formatting) and HTML emails, which are formatted and styled using HTML and inline CSS. Most of the styled, multimedia marketing emails in your inbox are HTML emails.</p>
+                                    <p style="Margin: 0; font-weight: 400; font-size: 20px; line-height: 23px;">
+                                        There are two main types of email you can send and receive: plain text emails (any email that contains just plain text with no formatting) and HTML emails, which are formatted and styled using HTML and inline CSS. Most of the styled, multimedia marketing emails in your inbox are HTML emails.
+                                    </p>
                                 </td>
                             </tr>
                         </table>
