@@ -8,6 +8,19 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
     <title>Email developer course</title>
+    <!-- This will improve rendering on machines that have a higher DPI set, this is often the case for Windows laptops 
+    that have higher than standard resolution monitors, or users who have manually chosen to increase the DPI. -->
+    <!-- Это улучшит рендеринг на компьютерах с более высоким значением DPI, что часто имеет место для ноутбуков с Windows, 
+    которые имеют мониторы с более высоким разрешением, чем стандартное, или для пользователей, которые вручную выбрали увеличение DPI. -->
+    <!--[if mso]>
+    <noscript>
+    <xml>
+        <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
     <style> 
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
         
@@ -99,10 +112,13 @@
             }
         }
 
+        /* This is essentially a duplicate of the meta color-scheme. At time of writing this only really works 
+        in Apple Mail which supports both methods but in the interest of future proofing I’m including both. */
         :root {
             color-scheme: light dark;
             supported-color-schemes: light dark;
         }
+
         /* Used to target the application version of Outlook */
         [data-ogsc] .dark-img {
             display: block !important;
